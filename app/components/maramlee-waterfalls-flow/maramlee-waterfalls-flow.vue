@@ -123,6 +123,7 @@ export default {
         .exec();
     },
     refresh() {
+		console.log("触发刷新: ---");
       let arr = [];
       for (let i = 0; i < this.cols; i++) {
         arr.push(0);
