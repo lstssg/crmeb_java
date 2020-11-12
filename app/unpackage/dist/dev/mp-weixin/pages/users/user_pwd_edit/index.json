@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "修改密码",
+  "navigationBarBackgroundColor": "#e93323",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "authorize": "/components/Authorize"
+  }
+}

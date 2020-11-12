@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "首页",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tab-nav": "/components/tabNav",
+    "good-list": "/components/goodList/index",
+    "promotion-good": "/components/promotionGood/index",
+    "coupon-window": "/components/couponWindow/index",
+    "count-down": "/components/countDown/index",
+    "recommend": "/components/recommend/index",
+    "authorize": "/components/Authorize"
+  }
+}

@@ -27,6 +27,13 @@
 			}
 		},
 		{
+			"path": "pages/square/square",
+			"style": {
+				"navigationBarTitleText": "广场",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
 			"path": "pages/goods_details/index",
 			"style": {
 				"navigationStyle": "custom"
@@ -531,7 +538,13 @@
 		        "iconPath": "static/images/4-001.png",
 		        "selectedIconPath": "static/images/4-002.png",
 		        "text": "我的"
-		      }
+		      },
+			  {
+				  "pagePath": "pages/square/square",
+				  "iconPath": "static/images/5-001.png",
+				  "selectedIconPath": "static/images/5-002.png",
+				  "text": "广场"
+			  }
 		    ]
 	},
 	"condition" : { //模式配置，仅开发期间生效

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "提现",
+  "navigationBarBackgroundColor": "#e93323",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "authorize": "/components/Authorize"
+  }
+}

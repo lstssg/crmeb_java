@@ -1,0 +1,42 @@
+
+.money {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.pic-num {
+	color: #ffffff;
+	font-size: 0.24rem;
+}
+.coupon-list .item .text .condition{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.condition .line-title {
+	width: 90rpx;
+	height: 40rpx !important;
+	line-height: 1.5 !important;
+	padding: 0 10rpx;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: rgba(255, 247, 247, 1);
+	border: 1px solid rgba(232, 51, 35, 1);
+	opacity: 1;
+	-webkit-border-radius: 22rpx;
+	        border-radius: 22rpx;
+	font-size: 20rpx !important;
+	color: #e83323;
+	margin-right: 12rpx;
+}
+

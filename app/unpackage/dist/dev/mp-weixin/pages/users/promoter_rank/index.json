@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "推广人排行",
+  "navigationBarBackgroundColor": "#e93323",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "authorize": "/components/Authorize",
+    "home": "/components/home/index"
+  }
+}

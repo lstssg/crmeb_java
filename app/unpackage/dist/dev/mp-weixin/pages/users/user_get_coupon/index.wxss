@@ -1,0 +1,25 @@
+
+.condition .line-title.data-v-67877894{
+  width:90rpx;
+  padding: 0 10rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background:rgba(255,247,247,1);
+  border:1px solid rgba(232,51,35,1);
+  opacity:1;
+  -webkit-border-radius:20rpx;
+          border-radius:20rpx;
+  font-size:20rpx;
+  color: #E83323;
+  margin-right: 12rpx;
+}
+.condition .line-title.gray.data-v-67877894{
+  border-color:#BBB;
+  color:#bbb;
+  background-color:#F5F5F5;
+}
+.coupon-list .pic-num.data-v-67877894{
+  color: #FFFFFF;
+  font-size: 24rpx;
+}
+
