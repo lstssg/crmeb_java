@@ -51,6 +51,21 @@
 		components: {
 			waterfallsFlow
 		},
+		onLoad() {
+			uni.request({
+			    url: 'http://121.196.190.222/squareQuery.php', //仅为示例，并非真实接口地址。
+			    data: {
+			        text: 'uni.request'
+			    },
+			    header: {
+			        'custom-header': 'hello' //自定义请求头信息
+			    },
+			    success: (res) => {
+			        console.log(res.data);
+			        this.text = 'request success';
+			    }
+			});
+		},
 		onPullDownRefresh() {
 			console.log("触发下拉刷新: ");
 			this.$refs.waterfallsFlow.refresh();
