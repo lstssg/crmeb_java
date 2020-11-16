@@ -116,6 +116,15 @@
 				// #endif
 			}
 		}
+        ,{
+            "path" : "pages/commit/commit",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	 "subPackages": [
 	    {

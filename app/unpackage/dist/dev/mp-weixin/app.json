@@ -12,7 +12,8 @@
     "pages/news_details/index",
     "pages/goods_search/index",
     "pages/order_pay_status/index",
-    "pages/order_details/index"
+    "pages/order_details/index",
+    "pages/commit/commit"
   ],
   "subPackages": [
     {
@@ -143,5 +144,5 @@
     }
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap11.json"
+  "sitemapLocation": "sitemap46.json"
 }

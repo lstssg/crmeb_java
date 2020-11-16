@@ -42,7 +42,11 @@
 			<!-- #endif -->
 		</waterfallsFlow>
 		<view class="no-more" v-if="isEnd">没有更多了</view>
+		<view @tap ="addDetail">
+			<image class="add" src="../../static/images/addDetail.png"></image>
+		</view>
 	</view>
+	
 </template>
 
 <script>
@@ -217,6 +221,12 @@
 			imgLoad(){
 				console.log("图片加载完毕---: ");
 				uni.hideLoading();
+			},
+			addDetail(){
+				console.log("点击发布按钮！");
+				uni.navigateTo({
+					url: '/pages/commit/commit',
+				})
 			}
 		}
 	};
@@ -283,5 +293,12 @@
 	  color: #8799a3;
 	  margin-top: 20rpx;
 	  margin-bottom: 50rpx;
+	},
+	.add{
+	  position: fixed;
+	  width: 76rpx;
+	  height: 76rpx;
+	  bottom: 30rpx;
+	  right: 20rpx;
 	}
 </style>
