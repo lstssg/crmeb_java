@@ -1,5 +1,10 @@
 <template>
-	<view class="preViewAll">
+	<form @submit="formSubmit">
+		<view>
+			<view class="content">
+				<textarea class="ta" maxlength="1000" placeholder="请输入想说的话..." @blur="bindTextAreaBlur" />
+				</view>
+		<view class="preViewAll">
 		<!--图片-->
 		<view v-for="(item,index) in imageList" :key="index">
 			<view class="imagePreview">
@@ -24,7 +29,14 @@
 			<view style="font-size:30rpx;">拍照/视频</view>
 		</view>
 	</view>
-
+	<view class="sendView">
+			<button class="send" formType="submit">
+				<text class="sendText">发送</text>
+			</button>
+	
+	</view>
+	</view>
+</form>
 </template>
 
 <script>
@@ -50,6 +62,8 @@
 					name: '前置摄像头'
 				}],
 				cameraIndex: 0, //
+				
+				inputVal:""
 			}
 		},
 		onUnload() {
@@ -144,6 +158,16 @@
 					}
 				});
 			},
+			
+			bindTextAreaBlur: function (e) {
+			    
+			    this.inputVal = e.detail.value;
+			  },
+			  //内容由于只能通过表单获取在这里发送
+			  formSubmit: function (e) {
+				  console.log(this.inputVal);
+			    // this.sendContent(this.data.inputVal);
+			  },
 		}
 	}
 </script>
@@ -152,6 +176,7 @@
 	.preViewAll {
 		width: 740rpx;
 		height: auto;
+		margin-top: auto;
 		display: flex;
 		justify-content: flex-start;
 		flex-wrap: wrap;
@@ -191,5 +216,37 @@
 		margin-left: 15rpx;
 		margin-top: 15rpx;
 		border-radius: 15rpx;
+	},
+	.content{
+		background-color: white;
+		 width: 98%;
+		 margin-left: 1%;
+		 margin-right: 1%;
+		 margin-top: 15rpx;
+		
+	},
+	.ta{
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+		font: 'Courier New', Courier, monospace;
+		font-size: medium;
+	},
+	.send {
+	  background-color: #F76968;
+	  width: 80%;
+	  height: 100rpx;
+	  margin-top: 80rpx;
+	  margin-right: 10%;
+	  margin-left: 10%;
+	  border-radius: 10rpx;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+	
+	.sendText {
+	  font-size: 30rpx;
+	  color: white;
 	}
 </style>
