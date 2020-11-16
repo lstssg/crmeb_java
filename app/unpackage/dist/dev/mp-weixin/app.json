@@ -143,6 +143,6 @@
       "desc": "你的位置信息将用于和门店的距离长度"
     }
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap20.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {}
 }

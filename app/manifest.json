@@ -74,7 +74,7 @@
         //         "provider" : "wx738958e0f4c894f9"
         //     }
         // },
-        // "sitemapLocation" : "sitemap.json",
+        "sitemapLocation" : "sitemap.json",
         "usingComponents" : true
     },
     "mp-alipay" : {
