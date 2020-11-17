@@ -165,6 +165,8 @@
 				getUserInfo().then(res => {
 					that.userInfo = res.data;
 					that.levelInfo = res.data.experience;
+					console.log("用户信息--->>>" + JSON.stringify(that.userInfo) );
+					console.log("用户经验--->>>" + that.levelInfo);
 				}).catch(function(res) {
 					return that.$util.Tips({
 						title: res
