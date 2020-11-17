@@ -114,7 +114,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/static/iconfont/iconfont.css';
+@import '@/components/five-mul-commentlist/iconfont.css';
 .view-content-comment {
 	background-color: white;
 	margin-top: 20rpx;

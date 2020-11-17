@@ -94,7 +94,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   uniCalendar: function() {
-    return Promise.all(/*! import() | components/uni-calendar/uni-calendar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-calendar/uni-calendar")]).then(__webpack_require__.bind(null, /*! @/components/uni-calendar/uni-calendar.vue */ 745))
+    return Promise.all(/*! import() | components/uni-calendar/uni-calendar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-calendar/uni-calendar")]).then(__webpack_require__.bind(null, /*! @/components/uni-calendar/uni-calendar.vue */ 752))
   }
 }
 var render = function() {
@@ -302,7 +302,7 @@ var _admin = __webpack_require__(/*! @/api/admin */ 528);function _interopRequir
 //
 //
 //
-var uniCalendar = function uniCalendar() {Promise.all(/*! require.ensure | components/uni-calendar/uni-calendar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-calendar/uni-calendar")]).then((function () {return resolve(__webpack_require__(/*! @/components/uni-calendar/uni-calendar.vue */ 745));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var canvaLineA = null; // import Calendar from 'mpvue-calendar'
+var uniCalendar = function uniCalendar() {Promise.all(/*! require.ensure | components/uni-calendar/uni-calendar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-calendar/uni-calendar")]).then((function () {return resolve(__webpack_require__(/*! @/components/uni-calendar/uni-calendar.vue */ 752));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var canvaLineA = null; // import Calendar from 'mpvue-calendar'
 // import 'mpvue-calendar/src/style.css
 // import Loading from "@components/Loading";
 var year = new Date().getFullYear();var month = new Date().getMonth() + 1;var day = new Date().getDate();var _default = { name: "Statistics", components: { // Calendar,

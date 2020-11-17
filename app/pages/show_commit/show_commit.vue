@@ -282,7 +282,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../static/iconfont/iconfont.css';
+@import '@/components/five-mul-commentlist/iconfont.css';
 page,
 .content-ques {
 	background-color: $view-bg-color;

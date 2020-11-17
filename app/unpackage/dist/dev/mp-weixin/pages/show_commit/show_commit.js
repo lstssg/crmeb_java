@@ -95,6 +95,9 @@ __webpack_require__.r(__webpack_exports__);
 var components = {
   fiveMulCommentlist: function() {
     return __webpack_require__.e(/*! import() | components/five-mul-commentlist/five-mul-commentlist */ "components/five-mul-commentlist/five-mul-commentlist").then(__webpack_require__.bind(null, /*! @/components/five-mul-commentlist/five-mul-commentlist.vue */ 710))
+  },
+  fiveComment: function() {
+    return __webpack_require__.e(/*! import() | components/five-comment/five-comment */ "components/five-comment/five-comment").then(__webpack_require__.bind(null, /*! @/components/five-comment/five-comment.vue */ 717))
   }
 }
 var render = function() {

@@ -161,7 +161,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _store = __webpack_require__(/*! @/api/store */ 40);var emptyPage = function emptyPage() {__webpack_require__.e(/*! require.ensure | components/emptyPage */ "components/emptyPage").then((function () {return resolve(__webpack_require__(/*! @/components/emptyPage.vue */ 717));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GoodList = function GoodList() {Promise.all(/*! require.ensure | components/goodList/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/goodList/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/goodList */ 580));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _store = __webpack_require__(/*! @/api/store */ 40);var emptyPage = function emptyPage() {__webpack_require__.e(/*! require.ensure | components/emptyPage */ "components/emptyPage").then((function () {return resolve(__webpack_require__(/*! @/components/emptyPage.vue */ 724));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var GoodList = function GoodList() {Promise.all(/*! require.ensure | components/goodList/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/goodList/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/goodList */ 580));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 {
   name: "HotNewGoods",
   components: {
