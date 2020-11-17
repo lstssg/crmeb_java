@@ -50,19 +50,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 0,
 			"list": [
 				{
 					"name": "",
 					"path": "",
 					"query": "",
 					"id": 0
-				},
-				{
-					"id": 1,
-					"name": "pages/commit/commit",
-					"pathName": "pages/commit/commit",
-					"query": ""
 				}
 			]
 		}
