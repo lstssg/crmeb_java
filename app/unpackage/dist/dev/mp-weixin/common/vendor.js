@@ -904,7 +904,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"crmeb","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"crmeb","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -2920,9 +2920,9 @@ var index = {
 /***/ }),
 
 /***/ 11:
-/*!*******************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/store/modules/index.js ***!
-  \*******************************************************************************************/
+/*!********************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/store/modules/index.js ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2935,9 +2935,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 12:
-/*!*****************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/store/modules/app.js ***!
-  \*****************************************************************************************/
+/*!******************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/store/modules/app.js ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3027,9 +3027,9 @@ var actions = {
 /***/ }),
 
 /***/ 13:
-/*!********************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/api/user.js ***!
-  \********************************************************************************/
+/*!*********************************************!*\
+  !*** D:/Web/crmeb_java_git/app/api/user.js ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3443,9 +3443,9 @@ function getuserDalance()
 /***/ }),
 
 /***/ 135:
-/*!**********************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/utils/SubscribeMessage.js ***!
-  \**********************************************************************************************/
+/*!***********************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/utils/SubscribeMessage.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3556,9 +3556,9 @@ function subscribe(tmplIds) {
 /***/ }),
 
 /***/ 14:
-/*!*************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/utils/request.js ***!
-  \*************************************************************************************/
+/*!**************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/utils/request.js ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3637,9 +3637,9 @@ request;exports.default = _default;
 /***/ }),
 
 /***/ 15:
-/*!**********************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/config/app.js ***!
-  \**********************************************************************************/
+/*!***********************************************!*\
+  !*** D:/Web/crmeb_java_git/app/config/app.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3677,9 +3677,9 @@ module.exports = {
 /***/ }),
 
 /***/ 16:
-/*!****************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/domain.json ***!
-  \****************************************************************************/
+/*!*****************************************!*\
+  !*** D:/Web/crmeb_java_git/domain.json ***!
+  \*****************************************/
 /*! exports provided: domain, default */
 /***/ (function(module) {
 
@@ -3688,9 +3688,9 @@ module.exports = JSON.parse("{\"domain\":\"https://api.chenziyue.cn\"}");
 /***/ }),
 
 /***/ 17:
-/*!************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/config/cache.js ***!
-  \************************************************************************************/
+/*!*************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/config/cache.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -3729,20 +3729,188 @@ module.exports = {
 /***/ }),
 
 /***/ 170:
-/*!**********************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/plugin/dayjs/dayjs.min.js ***!
-  \**********************************************************************************************/
+/*!*****************************************!*\
+  !*** D:/Web/crmeb_java_git/app/data.js ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-!function (t, e) { true ? module.exports = e() : undefined;}(this, function () {"use strict";var t = "millisecond",e = "second",n = "minute",r = "hour",i = "day",s = "week",u = "month",o = "quarter",a = "year",h = /^(\d{4})-?(\d{1,2})-?(\d{0,2})[^0-9]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?.?(\d{1,3})?$/,f = /\[([^\]]+)]|Y{2,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g,c = function c(t, e, n) {var r = String(t);return !r || r.length >= e ? t : "" + Array(e + 1 - r.length).join(n) + t;},d = { s: c, z: function z(t) {var e = -t.utcOffset(),n = Math.abs(e),r = Math.floor(n / 60),i = n % 60;return (e <= 0 ? "+" : "-") + c(r, 2, "0") + ":" + c(i, 2, "0");}, m: function m(t, e) {var n = 12 * (e.year() - t.year()) + (e.month() - t.month()),r = t.clone().add(n, u),i = e - r < 0,s = t.clone().add(n + (i ? -1 : 1), u);return Number(-(n + (e - r) / (i ? r - s : s - r)) || 0);}, a: function a(t) {return t < 0 ? Math.ceil(t) || 0 : Math.floor(t);}, p: function p(h) {return { M: u, y: a, w: s, d: i, D: "date", h: r, m: n, s: e, ms: t, Q: o }[h] || String(h || "").toLowerCase().replace(/s$/, "");}, u: function u(t) {return void 0 === t;} },$ = { name: "en", weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"), months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_") },l = "en",m = {};m[l] = $;var y = function y(t) {return t instanceof v;},M = function M(t, e, n) {var r;if (!t) return l;if ("string" == typeof t) m[t] && (r = t), e && (m[t] = e, r = t);else {var i = t.name;m[i] = t, r = i;}return !n && r && (l = r), r || !n && l;},g = function g(t, e) {if (y(t)) return t.clone();var n = "object" == typeof e ? e : {};return n.date = t, n.args = arguments, new v(n);},D = d;D.l = M, D.i = y, D.w = function (t, e) {return g(t, { locale: e.$L, utc: e.$u, $offset: e.$offset });};var v = function () {function c(t) {this.$L = this.$L || M(t.locale, null, !0), this.parse(t);}var d = c.prototype;return d.parse = function (t) {this.$d = function (t) {var e = t.date,n = t.utc;if (null === e) return new Date(NaN);if (D.u(e)) return new Date();if (e instanceof Date) return new Date(e);if ("string" == typeof e && !/Z$/i.test(e)) {var r = e.match(h);if (r) return n ? new Date(Date.UTC(r[1], r[2] - 1, r[3] || 1, r[4] || 0, r[5] || 0, r[6] || 0, r[7] || 0)) : new Date(r[1], r[2] - 1, r[3] || 1, r[4] || 0, r[5] || 0, r[6] || 0, r[7] || 0);}return new Date(e);}(t), this.init();}, d.init = function () {var t = this.$d;this.$y = t.getFullYear(), this.$M = t.getMonth(), this.$D = t.getDate(), this.$W = t.getDay(), this.$H = t.getHours(), this.$m = t.getMinutes(), this.$s = t.getSeconds(), this.$ms = t.getMilliseconds();}, d.$utils = function () {return D;}, d.isValid = function () {return !("Invalid Date" === this.$d.toString());}, d.isSame = function (t, e) {var n = g(t);return this.startOf(e) <= n && n <= this.endOf(e);}, d.isAfter = function (t, e) {return g(t) < this.startOf(e);}, d.isBefore = function (t, e) {return this.endOf(e) < g(t);}, d.$g = function (t, e, n) {return D.u(t) ? this[e] : this.set(n, t);}, d.year = function (t) {return this.$g(t, "$y", a);}, d.month = function (t) {return this.$g(t, "$M", u);}, d.day = function (t) {return this.$g(t, "$W", i);}, d.date = function (t) {return this.$g(t, "$D", "date");}, d.hour = function (t) {return this.$g(t, "$H", r);}, d.minute = function (t) {return this.$g(t, "$m", n);}, d.second = function (t) {return this.$g(t, "$s", e);}, d.millisecond = function (e) {return this.$g(e, "$ms", t);}, d.unix = function () {return Math.floor(this.valueOf() / 1e3);}, d.valueOf = function () {return this.$d.getTime();}, d.startOf = function (t, o) {var h = this,f = !!D.u(o) || o,c = D.p(t),d = function d(t, e) {var n = D.w(h.$u ? Date.UTC(h.$y, e, t) : new Date(h.$y, e, t), h);return f ? n : n.endOf(i);},$ = function $(t, e) {return D.w(h.toDate()[t].apply(h.toDate("s"), (f ? [0, 0, 0, 0] : [23, 59, 59, 999]).slice(e)), h);},l = this.$W,m = this.$M,y = this.$D,M = "set" + (this.$u ? "UTC" : "");switch (c) {case a:return f ? d(1, 0) : d(31, 11);case u:return f ? d(1, m) : d(0, m + 1);case s:var g = this.$locale().weekStart || 0,v = (l < g ? l + 7 : l) - g;return d(f ? y - v : y + (6 - v), m);case i:case "date":return $(M + "Hours", 0);case r:return $(M + "Minutes", 1);case n:return $(M + "Seconds", 2);case e:return $(M + "Milliseconds", 3);default:return this.clone();}}, d.endOf = function (t) {return this.startOf(t, !1);}, d.$set = function (s, o) {var h,f = D.p(s),c = "set" + (this.$u ? "UTC" : ""),d = (h = {}, h[i] = c + "Date", h.date = c + "Date", h[u] = c + "Month", h[a] = c + "FullYear", h[r] = c + "Hours", h[n] = c + "Minutes", h[e] = c + "Seconds", h[t] = c + "Milliseconds", h)[f],$ = f === i ? this.$D + (o - this.$W) : o;if (f === u || f === a) {var l = this.clone().set("date", 1);l.$d[d]($), l.init(), this.$d = l.set("date", Math.min(this.$D, l.daysInMonth())).toDate();} else d && this.$d[d]($);return this.init(), this;}, d.set = function (t, e) {return this.clone().$set(t, e);}, d.get = function (t) {return this[D.p(t)]();}, d.add = function (t, o) {var h,f = this;t = Number(t);var c = D.p(o),d = function d(e) {var n = g(f);return D.w(n.date(n.date() + Math.round(e * t)), f);};if (c === u) return this.set(u, this.$M + t);if (c === a) return this.set(a, this.$y + t);if (c === i) return d(1);if (c === s) return d(7);var $ = (h = {}, h[n] = 6e4, h[r] = 36e5, h[e] = 1e3, h)[c] || 1,l = this.$d.getTime() + t * $;return D.w(l, this);}, d.subtract = function (t, e) {return this.add(-1 * t, e);}, d.format = function (t) {var e = this;if (!this.isValid()) return "Invalid Date";var n = t || "YYYY-MM-DDTHH:mm:ssZ",r = D.z(this),i = this.$locale(),s = this.$H,u = this.$m,o = this.$M,a = i.weekdays,h = i.months,c = function c(t, r, i, s) {return t && (t[r] || t(e, n)) || i[r].substr(0, s);},d = function d(t) {return D.s(s % 12 || 12, t, "0");},$ = i.meridiem || function (t, e, n) {var r = t < 12 ? "AM" : "PM";return n ? r.toLowerCase() : r;},l = { YY: String(this.$y).slice(-2), YYYY: this.$y, M: o + 1, MM: D.s(o + 1, 2, "0"), MMM: c(i.monthsShort, o, h, 3), MMMM: h[o] || h(this, n), D: this.$D, DD: D.s(this.$D, 2, "0"), d: String(this.$W), dd: c(i.weekdaysMin, this.$W, a, 2), ddd: c(i.weekdaysShort, this.$W, a, 3), dddd: a[this.$W], H: String(s), HH: D.s(s, 2, "0"), h: d(1), hh: d(2), a: $(s, u, !0), A: $(s, u, !1), m: String(u), mm: D.s(u, 2, "0"), s: String(this.$s), ss: D.s(this.$s, 2, "0"), SSS: D.s(this.$ms, 3, "0"), Z: r };return n.replace(f, function (t, e) {return e || l[t] || r.replace(":", "");});}, d.utcOffset = function () {return 15 * -Math.round(this.$d.getTimezoneOffset() / 15);}, d.diff = function (t, h, f) {var c,d = D.p(h),$ = g(t),l = 6e4 * ($.utcOffset() - this.utcOffset()),m = this - $,y = D.m(this, $);return y = (c = {}, c[a] = y / 12, c[u] = y, c[o] = y / 3, c[s] = (m - l) / 6048e5, c[i] = (m - l) / 864e5, c[r] = m / 36e5, c[n] = m / 6e4, c[e] = m / 1e3, c)[d] || m, f ? y : D.a(y);}, d.daysInMonth = function () {return this.endOf(u).$D;}, d.$locale = function () {return m[this.$L];}, d.locale = function (t, e) {if (!t) return this.$L;var n = this.clone(),r = M(t, e, !0);return r && (n.$L = r), n;}, d.clone = function () {return D.w(this.$d, this);}, d.toDate = function () {return new Date(this.valueOf());}, d.toJSON = function () {return this.isValid() ? this.toISOString() : null;}, d.toISOString = function () {return this.$d.toISOString();}, d.toString = function () {return this.$d.toUTCString();}, c;}();return g.prototype = v.prototype, g.extend = function (t, e) {return t(e, v, g), g;}, g.locale = M, g.isDayjs = y, g.unix = function (t) {return g(1e3 * t);}, g.en = m[l], g.Ls = m, g;});
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var dataInfo = {
+  "CREATE_TIME": 1593502282.0,
+  "DETAIL_DESC": "美好的一天从这里开始！",
+  "PLACE": "济南市章丘市",
+  "IS_FAVORITE": "0", //是否收藏
+  "FAVORITE_NUM": "0", //收藏数
+  "VIEW_NUM": "6", //查看数
+  "IS_PRAISE": "0", //是否点赞
+  "PRAISE_NUM": "1", //点赞数
+  "COMMENT_NUM": "3", //评论数
+  "CANDELETE": 1, //是否可删除
+  "NICKNAME": "小五",
+  "HEADIMGURL": "http://img0.imgtn.bdimg.com/it/u=2400095643,300983595&fm=11&gp=0.jpg",
+  "IMAG_ARR": [
+  "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1599475741266&di=e36d6c01c93320e2ba1504d8357248f4&imgtype=0&src=http%3A%2F%2Fa0.att.hudong.com%2F30%2F29%2F01300000201438121627296084016.jpg"] };
+
+
+
+var commentList = [{
+  "COMMENT_TIME": "2020-07-07 10:33:29",
+  "FIRSTNICKNAME": "网友1271622",
+  "CHILD_ANWSER_LIST": [],
+  "IS_PRAISE": null,
+  "COMMENT": "赞",
+  "PRAISE_NUM": 0,
+  "CANDELETE": 1,
+  "HEADIMGURL": "http://img2.imgtn.bdimg.com/it/u=2659658743,1944621503&fm=26&gp=0.jpg",
+  "SECONDNICKNAME": null },
+
+{
+  "COMMENT_TIME": "2020-07-07 10:32:52",
+  "FIRSTNICKNAME": "网友3778839",
+  "IS_PRAISE": null,
+  "COMMENT": "花好看",
+  "PRAISE_NUM": 0,
+  "CANDELETE": 0,
+  "HEADIMGURL": "http://pic1.zhimg.com/50/v2-e88c0426c1ccc429dbedea3d01e5fac2_hd.jpg",
+  "PARENTID": "1",
+  "SECONDNICKNAME": null,
+  "CHILD_ANWSER_LIST": [{
+    "COMMENT_TIME": "2020-07-07 10:39:20",
+    "FIRSTNICKNAME": "网友3778839",
+    "IS_PRAISE": null,
+    "COMMENT": "嘻嘻，真的很好看呀，很喜欢！",
+    "PRAISE_NUM": 0,
+    "CANDELETE": 1,
+    "HEADIMGURL": "http://pic1.zhimg.com/50/v2-e88c0426c1ccc429dbedea3d01e5fac2_hd.jpg",
+    "SECONDNICKNAME": "小五" },
+  {
+    "COMMENT_TIME": "2020-07-07 10:33:10",
+    "FIRSTNICKNAME": "小五",
+    "IS_PRAISE": null,
+    "COMMENT": "谢谢",
+    "PRAISE_NUM": 0,
+    "CANDELETE": 1,
+    "HEADIMGURL": "http://img0.imgtn.bdimg.com/it/u=2400095643,300983595&fm=11&gp=0.jpg",
+    "SECONDNICKNAME": null }] }];var _default =
+
+
+
+
+{
+  dataInfo: dataInfo,
+  commentList: commentList };exports.default = _default;
+
+/***/ }),
+
+/***/ 171:
+/*!**************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/api/dateUtils.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * 使用说明
+ * 1. 引用:
+ * import dateUtils from '@/common/utils/dateUtils.js';
+ */
+
+/**
+     * 圈子时间格式
+     * @param {Object} dateString 
+     * 注意:参数如果兼容手机端 dateString必须是时间时间戳或者 “yyy-MM-DD”格式;H5端dateString格式不限制
+     * 
+     */
+function fromCurrentTime(dateString) {
+  dateString = parseInt(dateString) * 1000;
+  var date = new Date(dateString).getTime();
+  var currentDate = new Date().getTime();
+  var spaceTime = Math.abs(currentDate - date) / 1000; //把相差的毫秒数转换为秒数
+  if (spaceTime < 60) {
+    // 间隔时间小于1小时
+    // 返回分钟数
+    return '刚刚';
+  }
+  if (spaceTime < 3600) {
+    // 间隔时间小于1小时
+    // 返回分钟数
+    var time = parseInt(spaceTime / 60);
+    return time + '分钟前';
+
+  } else if (spaceTime < 86400) {
+    // 间隔时间小于1天
+    // 返回小时数
+    var _time = parseInt(spaceTime / 60 / 60);
+    return _time + '小时前';
+  } else if (spaceTime < 172800) {
+    // 间隔时间小于2天
+    // 返回天数
+    var _time2 = parseInt(spaceTime / 60 / 60 / 24);
+    return '昨天';
+  } else {
+    // 间隔时间大于2天
+    var _time3 = parseInt(spaceTime / 60 / 60 / 24);
+    return _time3 + '天前';
+  }
+
+}
+
+/**
+   *  距离当前时间天数
+   * @param {Object} dateString 
+   * 注意:参数如果兼容手机端 dateString必须是时间时间戳或者 “yyy-MM-DD”格式;H5端dateString格式不限制
+   * 
+   */
+function diffDay(dateString) {
+  var startDate = new Date();
+  var endDate = new Date(dateString);
+  return parseInt(Math.abs(endDate - startDate) / 1000 / 60 / 60 / 24); //把相差的毫秒数转换为天数
+}
+
+
+
+
+/**
+   * 格式化日期  
+   * @param {Object} fmt
+   * @param {Object} date
+   */
+function dateFormat(fmt, date) {
+  console.log(fmt, date);
+  var ret;
+  var opt = {
+    "Y+": date.getFullYear().toString(), // 年
+    "m+": (date.getMonth() + 1).toString(), // 月
+    "d+": date.getDate().toString(), // 日
+    "H+": date.getHours().toString(), // 时
+    "M+": date.getMinutes().toString(), // 分
+    "S+": date.getSeconds().toString() // 秒
+    // 有其他格式化字符需求可以继续添加，必须转化成字符串
+  };
+  for (var k in opt) {
+    ret = new RegExp("(" + k + ")").exec(fmt);
+    if (ret) {
+      fmt = fmt.replace(ret[1], ret[1].length == 1 ? opt[k] : opt[k].padStart(ret[1].length, "0"));
+    };
+  };
+  return fmt;
+}
+
+var dateUtils = {
+  fromCurrentTime: fromCurrentTime,
+  diffDay: diffDay,
+  dateFormat: dateFormat
+  // gotoAppSetting: gotoAppPermissionSetting
+};
+module.exports = dateUtils;
 
 /***/ }),
 
 /***/ 18:
-/*!***********************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/utils/cache.js ***!
-  \***********************************************************************************/
+/*!************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/utils/cache.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3897,10 +4065,21 @@ new Cache();exports.default = _default;
 
 /***/ }),
 
+/***/ 188:
+/*!***********************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/plugin/dayjs/dayjs.min.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+!function (t, e) { true ? module.exports = e() : undefined;}(this, function () {"use strict";var t = "millisecond",e = "second",n = "minute",r = "hour",i = "day",s = "week",u = "month",o = "quarter",a = "year",h = /^(\d{4})-?(\d{1,2})-?(\d{0,2})[^0-9]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?.?(\d{1,3})?$/,f = /\[([^\]]+)]|Y{2,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g,c = function c(t, e, n) {var r = String(t);return !r || r.length >= e ? t : "" + Array(e + 1 - r.length).join(n) + t;},d = { s: c, z: function z(t) {var e = -t.utcOffset(),n = Math.abs(e),r = Math.floor(n / 60),i = n % 60;return (e <= 0 ? "+" : "-") + c(r, 2, "0") + ":" + c(i, 2, "0");}, m: function m(t, e) {var n = 12 * (e.year() - t.year()) + (e.month() - t.month()),r = t.clone().add(n, u),i = e - r < 0,s = t.clone().add(n + (i ? -1 : 1), u);return Number(-(n + (e - r) / (i ? r - s : s - r)) || 0);}, a: function a(t) {return t < 0 ? Math.ceil(t) || 0 : Math.floor(t);}, p: function p(h) {return { M: u, y: a, w: s, d: i, D: "date", h: r, m: n, s: e, ms: t, Q: o }[h] || String(h || "").toLowerCase().replace(/s$/, "");}, u: function u(t) {return void 0 === t;} },$ = { name: "en", weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"), months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_") },l = "en",m = {};m[l] = $;var y = function y(t) {return t instanceof v;},M = function M(t, e, n) {var r;if (!t) return l;if ("string" == typeof t) m[t] && (r = t), e && (m[t] = e, r = t);else {var i = t.name;m[i] = t, r = i;}return !n && r && (l = r), r || !n && l;},g = function g(t, e) {if (y(t)) return t.clone();var n = "object" == typeof e ? e : {};return n.date = t, n.args = arguments, new v(n);},D = d;D.l = M, D.i = y, D.w = function (t, e) {return g(t, { locale: e.$L, utc: e.$u, $offset: e.$offset });};var v = function () {function c(t) {this.$L = this.$L || M(t.locale, null, !0), this.parse(t);}var d = c.prototype;return d.parse = function (t) {this.$d = function (t) {var e = t.date,n = t.utc;if (null === e) return new Date(NaN);if (D.u(e)) return new Date();if (e instanceof Date) return new Date(e);if ("string" == typeof e && !/Z$/i.test(e)) {var r = e.match(h);if (r) return n ? new Date(Date.UTC(r[1], r[2] - 1, r[3] || 1, r[4] || 0, r[5] || 0, r[6] || 0, r[7] || 0)) : new Date(r[1], r[2] - 1, r[3] || 1, r[4] || 0, r[5] || 0, r[6] || 0, r[7] || 0);}return new Date(e);}(t), this.init();}, d.init = function () {var t = this.$d;this.$y = t.getFullYear(), this.$M = t.getMonth(), this.$D = t.getDate(), this.$W = t.getDay(), this.$H = t.getHours(), this.$m = t.getMinutes(), this.$s = t.getSeconds(), this.$ms = t.getMilliseconds();}, d.$utils = function () {return D;}, d.isValid = function () {return !("Invalid Date" === this.$d.toString());}, d.isSame = function (t, e) {var n = g(t);return this.startOf(e) <= n && n <= this.endOf(e);}, d.isAfter = function (t, e) {return g(t) < this.startOf(e);}, d.isBefore = function (t, e) {return this.endOf(e) < g(t);}, d.$g = function (t, e, n) {return D.u(t) ? this[e] : this.set(n, t);}, d.year = function (t) {return this.$g(t, "$y", a);}, d.month = function (t) {return this.$g(t, "$M", u);}, d.day = function (t) {return this.$g(t, "$W", i);}, d.date = function (t) {return this.$g(t, "$D", "date");}, d.hour = function (t) {return this.$g(t, "$H", r);}, d.minute = function (t) {return this.$g(t, "$m", n);}, d.second = function (t) {return this.$g(t, "$s", e);}, d.millisecond = function (e) {return this.$g(e, "$ms", t);}, d.unix = function () {return Math.floor(this.valueOf() / 1e3);}, d.valueOf = function () {return this.$d.getTime();}, d.startOf = function (t, o) {var h = this,f = !!D.u(o) || o,c = D.p(t),d = function d(t, e) {var n = D.w(h.$u ? Date.UTC(h.$y, e, t) : new Date(h.$y, e, t), h);return f ? n : n.endOf(i);},$ = function $(t, e) {return D.w(h.toDate()[t].apply(h.toDate("s"), (f ? [0, 0, 0, 0] : [23, 59, 59, 999]).slice(e)), h);},l = this.$W,m = this.$M,y = this.$D,M = "set" + (this.$u ? "UTC" : "");switch (c) {case a:return f ? d(1, 0) : d(31, 11);case u:return f ? d(1, m) : d(0, m + 1);case s:var g = this.$locale().weekStart || 0,v = (l < g ? l + 7 : l) - g;return d(f ? y - v : y + (6 - v), m);case i:case "date":return $(M + "Hours", 0);case r:return $(M + "Minutes", 1);case n:return $(M + "Seconds", 2);case e:return $(M + "Milliseconds", 3);default:return this.clone();}}, d.endOf = function (t) {return this.startOf(t, !1);}, d.$set = function (s, o) {var h,f = D.p(s),c = "set" + (this.$u ? "UTC" : ""),d = (h = {}, h[i] = c + "Date", h.date = c + "Date", h[u] = c + "Month", h[a] = c + "FullYear", h[r] = c + "Hours", h[n] = c + "Minutes", h[e] = c + "Seconds", h[t] = c + "Milliseconds", h)[f],$ = f === i ? this.$D + (o - this.$W) : o;if (f === u || f === a) {var l = this.clone().set("date", 1);l.$d[d]($), l.init(), this.$d = l.set("date", Math.min(this.$D, l.daysInMonth())).toDate();} else d && this.$d[d]($);return this.init(), this;}, d.set = function (t, e) {return this.clone().$set(t, e);}, d.get = function (t) {return this[D.p(t)]();}, d.add = function (t, o) {var h,f = this;t = Number(t);var c = D.p(o),d = function d(e) {var n = g(f);return D.w(n.date(n.date() + Math.round(e * t)), f);};if (c === u) return this.set(u, this.$M + t);if (c === a) return this.set(a, this.$y + t);if (c === i) return d(1);if (c === s) return d(7);var $ = (h = {}, h[n] = 6e4, h[r] = 36e5, h[e] = 1e3, h)[c] || 1,l = this.$d.getTime() + t * $;return D.w(l, this);}, d.subtract = function (t, e) {return this.add(-1 * t, e);}, d.format = function (t) {var e = this;if (!this.isValid()) return "Invalid Date";var n = t || "YYYY-MM-DDTHH:mm:ssZ",r = D.z(this),i = this.$locale(),s = this.$H,u = this.$m,o = this.$M,a = i.weekdays,h = i.months,c = function c(t, r, i, s) {return t && (t[r] || t(e, n)) || i[r].substr(0, s);},d = function d(t) {return D.s(s % 12 || 12, t, "0");},$ = i.meridiem || function (t, e, n) {var r = t < 12 ? "AM" : "PM";return n ? r.toLowerCase() : r;},l = { YY: String(this.$y).slice(-2), YYYY: this.$y, M: o + 1, MM: D.s(o + 1, 2, "0"), MMM: c(i.monthsShort, o, h, 3), MMMM: h[o] || h(this, n), D: this.$D, DD: D.s(this.$D, 2, "0"), d: String(this.$W), dd: c(i.weekdaysMin, this.$W, a, 2), ddd: c(i.weekdaysShort, this.$W, a, 3), dddd: a[this.$W], H: String(s), HH: D.s(s, 2, "0"), h: d(1), hh: d(2), a: $(s, u, !0), A: $(s, u, !1), m: String(u), mm: D.s(u, 2, "0"), s: String(this.$s), ss: D.s(this.$s, 2, "0"), SSS: D.s(this.$ms, 3, "0"), Z: r };return n.replace(f, function (t, e) {return e || l[t] || r.replace(":", "");});}, d.utcOffset = function () {return 15 * -Math.round(this.$d.getTimezoneOffset() / 15);}, d.diff = function (t, h, f) {var c,d = D.p(h),$ = g(t),l = 6e4 * ($.utcOffset() - this.utcOffset()),m = this - $,y = D.m(this, $);return y = (c = {}, c[a] = y / 12, c[u] = y, c[o] = y / 3, c[s] = (m - l) / 6048e5, c[i] = (m - l) / 864e5, c[r] = m / 36e5, c[n] = m / 6e4, c[e] = m / 1e3, c)[d] || m, f ? y : D.a(y);}, d.daysInMonth = function () {return this.endOf(u).$D;}, d.$locale = function () {return m[this.$L];}, d.locale = function (t, e) {if (!t) return this.$L;var n = this.clone(),r = M(t, e, !0);return r && (n.$L = r), n;}, d.clone = function () {return D.w(this.$d, this);}, d.toDate = function () {return new Date(this.valueOf());}, d.toJSON = function () {return this.isValid() ? this.toISOString() : null;}, d.toISOString = function () {return this.$d.toISOString();}, d.toString = function () {return this.$d.toUTCString();}, c;}();return g.prototype = v.prototype, g.extend = function (t, e) {return t(e, v, g), g;}, g.locale = M, g.isDayjs = y, g.unix = function (t) {return g(1e3 * t);}, g.en = m[l], g.Ls = m, g;});
+
+/***/ }),
+
 /***/ 19:
-/*!*************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/store/getters.js ***!
-  \*************************************************************************************/
+/*!**************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/store/getters.js ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9451,7 +9630,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"crmeb","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_NAME":"crmeb","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -9472,14 +9651,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"crmeb","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"crmeb","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"crmeb","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"crmeb","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -9565,7 +9744,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"crmeb","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"crmeb","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -10102,9 +10281,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 23:
-/*!**********************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/utils/util.js ***!
-  \**********************************************************************************/
+/*!***********************************************!*\
+  !*** D:/Web/crmeb_java_git/app/utils/util.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11543,9 +11722,9 @@ if (hadRuntime) {
 /***/ }),
 
 /***/ 27:
-/*!************************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/plugin/image-tools/index.js ***!
-  \************************************************************************************************/
+/*!*************************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/plugin/image-tools/index.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11700,10 +11879,41 @@ function base64ToPath(base64) {
 
 /***/ }),
 
-/***/ 294:
-/*!*************************************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/components/wPicker/city-data/province.js ***!
-  \*************************************************************************************************************/
+/***/ 3:
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ 312:
+/*!**************************************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/components/wPicker/city-data/province.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11850,10 +12060,10 @@ provinceData;exports.default = _default;
 
 /***/ }),
 
-/***/ 295:
-/*!*********************************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/components/wPicker/city-data/city.js ***!
-  \*********************************************************************************************************/
+/***/ 313:
+/*!**********************************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/components/wPicker/city-data/city.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13364,10 +13574,10 @@ cityData;exports.default = _default;
 
 /***/ }),
 
-/***/ 296:
-/*!*********************************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/components/wPicker/city-data/area.js ***!
-  \*********************************************************************************************************/
+/***/ 314:
+/*!**********************************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/components/wPicker/city-data/area.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25917,10 +26127,10 @@ areaData;exports.default = _default;
 
 /***/ }),
 
-/***/ 297:
-/*!***************************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/components/wPicker/w-picker.js ***!
-  \***************************************************************************************************/
+/***/ 315:
+/*!****************************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/components/wPicker/w-picker.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26609,41 +26819,10 @@ initPicker;exports.default = _default;
 
 /***/ }),
 
-/***/ 3:
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-
 /***/ 34:
-/*!***********************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/libs/wechat.js ***!
-  \***********************************************************************************/
+/*!************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/libs/wechat.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -26652,9 +26831,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 35:
-/*!*******************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/api/api.js ***!
-  \*******************************************************************************/
+/*!********************************************!*\
+  !*** D:/Web/crmeb_java_git/app/api/api.js ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26887,9 +27066,9 @@ function getQrcode(data) {
 /***/ }),
 
 /***/ 36:
-/*!************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/api/activity.js ***!
-  \************************************************************************************/
+/*!*************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/api/activity.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27088,9 +27267,9 @@ function getSeckillHeaderApi() {
 /***/ }),
 
 /***/ 37:
-/*!**********************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/api/public.js ***!
-  \**********************************************************************************/
+/*!***********************************************!*\
+  !*** D:/Web/crmeb_java_git/app/api/public.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27178,9 +27357,9 @@ function copyWords() {
 /***/ }),
 
 /***/ 38:
-/*!**************************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/plugin/clipboard/clipboard.js ***!
-  \**************************************************************************************************/
+/*!***************************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/plugin/clipboard/clipboard.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28156,9 +28335,9 @@ function copyWords() {
 /***/ }),
 
 /***/ 39:
-/*!**********************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/libs/order.js ***!
-  \**********************************************************************************/
+/*!***********************************************!*\
+  !*** D:/Web/crmeb_java_git/app/libs/order.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28187,9 +28366,9 @@ function copyWords() {
 /***/ }),
 
 /***/ 4:
-/*!*******************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/pages.json ***!
-  \*******************************************************************************/
+/*!********************************************!*\
+  !*** D:/Web/crmeb_java_git/app/pages.json ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -28198,9 +28377,9 @@ function copyWords() {
 /***/ }),
 
 /***/ 40:
-/*!*********************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/api/store.js ***!
-  \*********************************************************************************/
+/*!**********************************************!*\
+  !*** D:/Web/crmeb_java_git/app/api/store.js ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28374,9 +28553,9 @@ function storeListApi(data) {
 /***/ }),
 
 /***/ 41:
-/*!***********************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/utils/index.js ***!
-  \***********************************************************************************/
+/*!************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/utils/index.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28469,10 +28648,10 @@ parseQuery;exports.default = _default;
 
 /***/ }),
 
-/***/ 412:
-/*!**************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/utils/validate.js ***!
-  \**************************************************************************************/
+/***/ 430:
+/*!***************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/utils/validate.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28505,10 +28684,10 @@ function checkPhone(phone) {
 
 /***/ }),
 
-/***/ 413:
-/*!************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/utils/dialog.js ***!
-  \************************************************************************************/
+/***/ 431:
+/*!*************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/utils/dialog.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -28516,110 +28695,10 @@ function checkPhone(phone) {
 
 /***/ }),
 
-/***/ 510:
-/*!*********************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/api/admin.js ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getStatisticsInfo = getStatisticsInfo;exports.getStatisticsMonth = getStatisticsMonth;exports.getAdminOrderList = getAdminOrderList;exports.setAdminOrderPrice = setAdminOrderPrice;exports.setAdminOrderRemark = setAdminOrderRemark;exports.getAdminOrderDetail = getAdminOrderDetail;exports.getAdminOrderDelivery = getAdminOrderDelivery;exports.setAdminOrderDelivery = setAdminOrderDelivery;exports.getStatisticsTime = getStatisticsTime;exports.setOfflinePay = setOfflinePay;exports.setOrderRefund = setOrderRefund;exports.getLogistics = getLogistics;exports.orderVerific = orderVerific;var _request = _interopRequireDefault(__webpack_require__(/*! @/utils/request.js */ 14));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-
-/**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               * 统计数据
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               */
-function getStatisticsInfo() {
-  return _request.default.get("/admin/order/statistics", {}, { login: true });
-}
-/**
-   * 订单月统计
-   */
-function getStatisticsMonth(where) {
-  return _request.default.get("/admin/order/data", where, { login: true });
-}
-/**
-   * 订单月统计
-   */
-function getAdminOrderList(where) {
-  return _request.default.get("/admin/order/list", where, { login: true });
-}
-/**
-   * 订单改价
-   */
-function setAdminOrderPrice(data) {
-  return _request.default.post("/admin/order/price", data, { login: true });
-}
-/**
-   * 订单备注
-   */
-function setAdminOrderRemark(data) {
-  return _request.default.post("/admin/order/remark", data, { login: true });
-}
-/**
-   * 订单详情
-   */
-function getAdminOrderDetail(orderId) {
-  return _request.default.get("/admin/order/detail/" + orderId, {}, { login: true });
-}
-/**
-   * 订单发货信息获取
-   */
-function getAdminOrderDelivery(orderId) {
-  return _request.default.get(
-  "/admin/order/delivery/gain/" + orderId,
-  {},
-  { login: true });
-
-}
-
-/**
-   * 订单发货保存
-   */
-function setAdminOrderDelivery(data) {
-  return _request.default.post("/admin/order/delivery/keep", data, { login: true });
-}
-/**
-   * 订单统计图
-   */
-function getStatisticsTime(data) {
-  return _request.default.get("/admin/order/time", data, { login: true });
-}
-/**
-   * 线下付款订单确认付款
-   */
-function setOfflinePay(data) {
-  return _request.default.post("/admin/order/offline", data, { login: true });
-}
-/**
-   * 订单确认退款
-   */
-function setOrderRefund(data) {
-  return _request.default.post("/admin/order/refund", data, { login: true });
-}
-
-/**
-   * 获取快递公司
-   * @returns {*}
-   */
-function getLogistics() {
-  return _request.default.get("/logistics", {}, { login: false });
-}
-
-/**
-   * 订单核销
-   * @returns {*}
-   */
-function orderVerific(verify_code, is_confirm) {
-  return _request.default.post("order/order_verific", { verify_code: verify_code, is_confirm: is_confirm });
-}
-
-/***/ }),
-
 /***/ 52:
-/*!*********************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/api/order.js ***!
-  \*********************************************************************************/
+/*!**********************************************!*\
+  !*** D:/Web/crmeb_java_git/app/api/order.js ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28842,10 +28921,110 @@ function qrcodeApi(data) {
 
 /***/ }),
 
-/***/ 543:
-/*!**************************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/components/ucharts/ucharts.js ***!
-  \**************************************************************************************************/
+/***/ 528:
+/*!**********************************************!*\
+  !*** D:/Web/crmeb_java_git/app/api/admin.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.getStatisticsInfo = getStatisticsInfo;exports.getStatisticsMonth = getStatisticsMonth;exports.getAdminOrderList = getAdminOrderList;exports.setAdminOrderPrice = setAdminOrderPrice;exports.setAdminOrderRemark = setAdminOrderRemark;exports.getAdminOrderDetail = getAdminOrderDetail;exports.getAdminOrderDelivery = getAdminOrderDelivery;exports.setAdminOrderDelivery = setAdminOrderDelivery;exports.getStatisticsTime = getStatisticsTime;exports.setOfflinePay = setOfflinePay;exports.setOrderRefund = setOrderRefund;exports.getLogistics = getLogistics;exports.orderVerific = orderVerific;var _request = _interopRequireDefault(__webpack_require__(/*! @/utils/request.js */ 14));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+/**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               * 统计数据
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               */
+function getStatisticsInfo() {
+  return _request.default.get("/admin/order/statistics", {}, { login: true });
+}
+/**
+   * 订单月统计
+   */
+function getStatisticsMonth(where) {
+  return _request.default.get("/admin/order/data", where, { login: true });
+}
+/**
+   * 订单月统计
+   */
+function getAdminOrderList(where) {
+  return _request.default.get("/admin/order/list", where, { login: true });
+}
+/**
+   * 订单改价
+   */
+function setAdminOrderPrice(data) {
+  return _request.default.post("/admin/order/price", data, { login: true });
+}
+/**
+   * 订单备注
+   */
+function setAdminOrderRemark(data) {
+  return _request.default.post("/admin/order/remark", data, { login: true });
+}
+/**
+   * 订单详情
+   */
+function getAdminOrderDetail(orderId) {
+  return _request.default.get("/admin/order/detail/" + orderId, {}, { login: true });
+}
+/**
+   * 订单发货信息获取
+   */
+function getAdminOrderDelivery(orderId) {
+  return _request.default.get(
+  "/admin/order/delivery/gain/" + orderId,
+  {},
+  { login: true });
+
+}
+
+/**
+   * 订单发货保存
+   */
+function setAdminOrderDelivery(data) {
+  return _request.default.post("/admin/order/delivery/keep", data, { login: true });
+}
+/**
+   * 订单统计图
+   */
+function getStatisticsTime(data) {
+  return _request.default.get("/admin/order/time", data, { login: true });
+}
+/**
+   * 线下付款订单确认付款
+   */
+function setOfflinePay(data) {
+  return _request.default.post("/admin/order/offline", data, { login: true });
+}
+/**
+   * 订单确认退款
+   */
+function setOrderRefund(data) {
+  return _request.default.post("/admin/order/refund", data, { login: true });
+}
+
+/**
+   * 获取快递公司
+   * @returns {*}
+   */
+function getLogistics() {
+  return _request.default.get("/logistics", {}, { login: false });
+}
+
+/**
+   * 订单核销
+   * @returns {*}
+   */
+function orderVerific(verify_code, is_confirm) {
+  return _request.default.post("order/order_verific", { verify_code: verify_code, is_confirm: is_confirm });
+}
+
+/***/ }),
+
+/***/ 561:
+/*!***************************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/components/ucharts/ucharts.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -34512,10 +34691,10 @@ if ( true && typeof module.exports === "object") {
 
 /***/ }),
 
-/***/ 609:
-/*!************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/libs/routine.js ***!
-  \************************************************************************************/
+/***/ 627:
+/*!*************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/libs/routine.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -34665,10 +34844,10 @@ new Routine();exports.default = _default;
 
 /***/ }),
 
-/***/ 631:
-/*!***************************************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/components/jyf-parser/libs/MpHtmlParser.js ***!
-  \***************************************************************************************************************/
+/***/ 649:
+/*!****************************************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/components/jyf-parser/libs/MpHtmlParser.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -34679,9 +34858,9 @@ function _classCallCheck(instance, Constructor) {if (!(instance instanceof Const
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           author：JinYufeng
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           update：2020/04/13
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
-var cfg = __webpack_require__(/*! ./config.js */ 632),
+var cfg = __webpack_require__(/*! ./config.js */ 650),
 blankChar = cfg.blankChar,
-CssHandler = __webpack_require__(/*! ./CssHandler.js */ 633),_wx$getSystemInfoSync =
+CssHandler = __webpack_require__(/*! ./CssHandler.js */ 651),_wx$getSystemInfoSync =
 
 
 
@@ -35252,10 +35431,10 @@ module.exports = MpHtmlParser;
 
 /***/ }),
 
-/***/ 632:
-/*!*********************************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/components/jyf-parser/libs/config.js ***!
-  \*********************************************************************************************************/
+/***/ 650:
+/*!**********************************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/components/jyf-parser/libs/config.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -35342,10 +35521,10 @@ function makeMap(str) {
 
 /***/ }),
 
-/***/ 633:
-/*!*************************************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/components/jyf-parser/libs/CssHandler.js ***!
-  \*************************************************************************************************************/
+/***/ 651:
+/*!**************************************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/components/jyf-parser/libs/CssHandler.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -35356,7 +35535,7 @@ function _classCallCheck(instance, Constructor) {if (!(instance instanceof Const
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           author：JinYufeng
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           update：2020/03/15
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
-var cfg = __webpack_require__(/*! ./config.js */ 632);var
+var cfg = __webpack_require__(/*! ./config.js */ 650);var
 CssHandler = /*#__PURE__*/function () {"use strict";
   function CssHandler(tagStyle) {var _this = this;_classCallCheck(this, CssHandler);_defineProperty(this, "getStyle",
 
@@ -35453,15 +35632,15 @@ CssParser = /*#__PURE__*/function () {"use strict";
 
 /***/ }),
 
-/***/ 725:
-/*!****************************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/components/uni-calendar/util.js ***!
-  \****************************************************************************************************/
+/***/ 750:
+/*!*****************************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/components/uni-calendar/util.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 726));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 751));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
 
 Calendar = /*#__PURE__*/function () {
   function Calendar()
@@ -35791,10 +35970,10 @@ Calendar;exports.default = _default;
 
 /***/ }),
 
-/***/ 726:
-/*!********************************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/components/uni-calendar/calendar.js ***!
-  \********************************************************************************************************/
+/***/ 751:
+/*!*********************************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/components/uni-calendar/calendar.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -36349,9 +36528,9 @@ calendar;exports.default = _default;
 /***/ }),
 
 /***/ 79:
-/*!*****************************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/js_sdk/Sansnn-uQRCode/uqrcode.js ***!
-  \*****************************************************************************************************/
+/*!******************************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/js_sdk/Sansnn-uQRCode/uqrcode.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -37741,9 +37920,9 @@ uQRCode;exports.default = _default;
 /***/ }),
 
 /***/ 8:
-/*!**********************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/libs/login.js ***!
-  \**********************************************************************************/
+/*!***********************************************!*\
+  !*** D:/Web/crmeb_java_git/app/libs/login.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -37812,189 +37991,10 @@ function checkLogin()
 
 /***/ }),
 
-/***/ 861:
-/*!*************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/api/dateUtils.js ***!
-  \*************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/**
- * 使用说明
- * 1. 引用:
- * import dateUtils from '@/common/utils/dateUtils.js';
- */
-
-/**
-     * 圈子时间格式
-     * @param {Object} dateString 
-     * 注意:参数如果兼容手机端 dateString必须是时间时间戳或者 “yyy-MM-DD”格式;H5端dateString格式不限制
-     * 
-     */
-function fromCurrentTime(dateString) {
-  dateString = parseInt(dateString) * 1000;
-  var date = new Date(dateString).getTime();
-  var currentDate = new Date().getTime();
-  var spaceTime = Math.abs(currentDate - date) / 1000; //把相差的毫秒数转换为秒数
-  if (spaceTime < 60) {
-    // 间隔时间小于1小时
-    // 返回分钟数
-    return '刚刚';
-  }
-  if (spaceTime < 3600) {
-    // 间隔时间小于1小时
-    // 返回分钟数
-    var time = parseInt(spaceTime / 60);
-    return time + '分钟前';
-
-  } else if (spaceTime < 86400) {
-    // 间隔时间小于1天
-    // 返回小时数
-    var _time = parseInt(spaceTime / 60 / 60);
-    return _time + '小时前';
-  } else if (spaceTime < 172800) {
-    // 间隔时间小于2天
-    // 返回天数
-    var _time2 = parseInt(spaceTime / 60 / 60 / 24);
-    return '昨天';
-  } else {
-    // 间隔时间大于2天
-    var _time3 = parseInt(spaceTime / 60 / 60 / 24);
-    return _time3 + '天前';
-  }
-
-}
-
-/**
-   *  距离当前时间天数
-   * @param {Object} dateString 
-   * 注意:参数如果兼容手机端 dateString必须是时间时间戳或者 “yyy-MM-DD”格式;H5端dateString格式不限制
-   * 
-   */
-function diffDay(dateString) {
-  var startDate = new Date();
-  var endDate = new Date(dateString);
-  return parseInt(Math.abs(endDate - startDate) / 1000 / 60 / 60 / 24); //把相差的毫秒数转换为天数
-}
-
-
-
-
-/**
-   * 格式化日期  
-   * @param {Object} fmt
-   * @param {Object} date
-   */
-function dateFormat(fmt, date) {
-  console.log(fmt, date);
-  var ret;
-  var opt = {
-    "Y+": date.getFullYear().toString(), // 年
-    "m+": (date.getMonth() + 1).toString(), // 月
-    "d+": date.getDate().toString(), // 日
-    "H+": date.getHours().toString(), // 时
-    "M+": date.getMinutes().toString(), // 分
-    "S+": date.getSeconds().toString() // 秒
-    // 有其他格式化字符需求可以继续添加，必须转化成字符串
-  };
-  for (var k in opt) {
-    ret = new RegExp("(" + k + ")").exec(fmt);
-    if (ret) {
-      fmt = fmt.replace(ret[1], ret[1].length == 1 ? opt[k] : opt[k].padStart(ret[1].length, "0"));
-    };
-  };
-  return fmt;
-}
-
-var dateUtils = {
-  fromCurrentTime: fromCurrentTime,
-  diffDay: diffDay,
-  dateFormat: dateFormat
-  // gotoAppSetting: gotoAppPermissionSetting
-};
-module.exports = dateUtils;
-
-/***/ }),
-
-/***/ 863:
-/*!****************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/data.js ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var dataInfo = {
-  "CREATE_TIME": 1593502282.0,
-  "DETAIL_DESC": "美好的一天从这里开始！",
-  "PLACE": "济南市章丘市",
-  "IS_FAVORITE": "0", //是否收藏
-  "FAVORITE_NUM": "0", //收藏数
-  "VIEW_NUM": "6", //查看数
-  "IS_PRAISE": "0", //是否点赞
-  "PRAISE_NUM": "1", //点赞数
-  "COMMENT_NUM": "3", //评论数
-  "CANDELETE": 1, //是否可删除
-  "NICKNAME": "小五",
-  "HEADIMGURL": "http://img0.imgtn.bdimg.com/it/u=2400095643,300983595&fm=11&gp=0.jpg",
-  "IMAG_ARR": [
-  "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1599475741266&di=e36d6c01c93320e2ba1504d8357248f4&imgtype=0&src=http%3A%2F%2Fa0.att.hudong.com%2F30%2F29%2F01300000201438121627296084016.jpg"] };
-
-
-
-var commentList = [{
-  "COMMENT_TIME": "2020-07-07 10:33:29",
-  "FIRSTNICKNAME": "网友1271622",
-  "CHILD_ANWSER_LIST": [],
-  "IS_PRAISE": null,
-  "COMMENT": "赞",
-  "PRAISE_NUM": 0,
-  "CANDELETE": 1,
-  "HEADIMGURL": "http://img2.imgtn.bdimg.com/it/u=2659658743,1944621503&fm=26&gp=0.jpg",
-  "SECONDNICKNAME": null },
-
-{
-  "COMMENT_TIME": "2020-07-07 10:32:52",
-  "FIRSTNICKNAME": "网友3778839",
-  "IS_PRAISE": null,
-  "COMMENT": "花好看",
-  "PRAISE_NUM": 0,
-  "CANDELETE": 0,
-  "HEADIMGURL": "http://pic1.zhimg.com/50/v2-e88c0426c1ccc429dbedea3d01e5fac2_hd.jpg",
-  "PARENTID": "1",
-  "SECONDNICKNAME": null,
-  "CHILD_ANWSER_LIST": [{
-    "COMMENT_TIME": "2020-07-07 10:39:20",
-    "FIRSTNICKNAME": "网友3778839",
-    "IS_PRAISE": null,
-    "COMMENT": "嘻嘻，真的很好看呀，很喜欢！",
-    "PRAISE_NUM": 0,
-    "CANDELETE": 1,
-    "HEADIMGURL": "http://pic1.zhimg.com/50/v2-e88c0426c1ccc429dbedea3d01e5fac2_hd.jpg",
-    "SECONDNICKNAME": "小五" },
-  {
-    "COMMENT_TIME": "2020-07-07 10:33:10",
-    "FIRSTNICKNAME": "小五",
-    "IS_PRAISE": null,
-    "COMMENT": "谢谢",
-    "PRAISE_NUM": 0,
-    "CANDELETE": 1,
-    "HEADIMGURL": "http://img0.imgtn.bdimg.com/it/u=2400095643,300983595&fm=11&gp=0.jpg",
-    "SECONDNICKNAME": null }] }];var _default =
-
-
-
-
-{
-  dataInfo: dataInfo,
-  commentList: commentList };exports.default = _default;
-
-/***/ }),
-
 /***/ 9:
-/*!***********************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/store/index.js ***!
-  \***********************************************************************************/
+/*!************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/store/index.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -38015,9 +38015,9 @@ new _vuex.default.Store({
 /***/ }),
 
 /***/ 96:
-/*!*********************************************************************************************!*\
-  !*** /Users/shaoGan/Documents/HBuilderProjects/crmeb_java_git/app/mixins/SendVerifyCode.js ***!
-  \*********************************************************************************************/
+/*!**********************************************************!*\
+  !*** D:/Web/crmeb_java_git/app/mixins/SendVerifyCode.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
