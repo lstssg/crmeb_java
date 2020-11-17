@@ -125,6 +125,24 @@
             }
             
         }
+        ,{
+            "path" : "pages/commit_goodList/commit_goodList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/show_commit/show_commit",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	 "subPackages": [
 	    {

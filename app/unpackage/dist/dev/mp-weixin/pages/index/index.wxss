@@ -35,6 +35,7 @@ page {
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+/* 文字基本颜色 */
  .spike-box .styleAll {
   display: inline-block;
   width: 44rpx;

@@ -23,6 +23,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+/* 文字基本颜色 */
 .promotionGood.data-v-7b4f8cd0 {
   padding: 0 30rpx;
 }

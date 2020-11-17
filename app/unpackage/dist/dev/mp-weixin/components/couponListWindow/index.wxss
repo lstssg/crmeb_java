@@ -23,6 +23,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+/* 文字基本颜色 */
 .coupon-list-window.data-v-06f3951c {
   position: fixed;
   bottom: 0;

@@ -23,6 +23,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+/* 文字基本颜色 */
 /*砍价记录*/
 .bargain-record .item .picTxt .text .time .styleAll {
   color: #fc4141;

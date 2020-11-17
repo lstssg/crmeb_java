@@ -1489,8 +1489,7 @@ to {
 	height: 100%
 }
 
-/* 登录、注册、忘记密码
- */
+/* 登录、注册、忘记密码 */
 .register {
 	background-image: -webkit-gradient(linear,left top, left bottom,color-stop(0, #eb5447),to(#ff8e3b));
 	background-image: -webkit-linear-gradient(top,#eb5447 0,#ff8e3b 100%);
@@ -1639,8 +1638,7 @@ to {
 		margin: 0 auto;
 }
 
-/* 首页修改轮播内部样式；
- */
+/* 首页修改轮播内部样式； */
 .index-bg .uni-swiper-dot {
 	width: 20rpx!important;
 	height: 5rpx!important;

@@ -23,6 +23,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+/* 文字基本颜色 */
 .product-window.data-v-286e5497 {
   position: fixed;
   bottom: 0;

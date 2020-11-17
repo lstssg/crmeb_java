@@ -23,6 +23,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+/* 文字基本颜色 */
 .PromoterRank .redBg.data-v-bce028a8 {
   padding: 45rpx 0 30rpx 0;
 }

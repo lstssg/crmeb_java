@@ -23,6 +23,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+/* 文字基本颜色 */
 .orderGoods.data-v-0d23a466 {
   background-color: #fff;
   margin-top: 12rpx;

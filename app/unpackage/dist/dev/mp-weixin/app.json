@@ -13,7 +13,9 @@
     "pages/goods_search/index",
     "pages/order_pay_status/index",
     "pages/order_details/index",
-    "pages/commit/commit"
+    "pages/commit/commit",
+    "pages/commit_goodList/commit_goodList",
+    "pages/show_commit/show_commit"
   ],
   "subPackages": [
     {

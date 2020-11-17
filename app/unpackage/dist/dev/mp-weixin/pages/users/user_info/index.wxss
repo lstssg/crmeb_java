@@ -23,6 +23,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+/* 文字基本颜色 */
 .personal-data .wrapper.data-v-6115a516 {
   margin: 10rpx 0;
   background-color: #fff;
