@@ -1,0 +1,1 @@
+<scroll-view><block wx:for="{{goodsList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><view data-event-opts="{{[['tap',[['chooseGoods',['$0'],[[['goodsList','',index]]]]]]]}}" class="goods" bindtap="__e"><image class="goodsPic" src="{{item.goodsPic}}" mode="aspectFit"></image><text>{{item.goodsName}}</text></view></block></block></scroll-view>

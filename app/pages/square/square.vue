@@ -217,6 +217,9 @@
 		methods: {
 			wapperClick(e) {
 				console.log("点击了wapper---" + e.id);
+				uni.navigateTo({
+					url:"../show_commit/show_commit"
+				})
 			},
 			imgLoad(){
 				console.log("图片加载完毕---: ");

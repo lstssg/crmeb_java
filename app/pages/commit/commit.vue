@@ -35,11 +35,22 @@
 			</button>
 	
 	</view>
+	<view class="goodsBlock" @tap="addGoods">
+		<image class="addGoods" src="../../static/images/address.png" mode="aspectFit"></image>
+		<view  class="goods" v-if="goodsId!=-1"  :data-goodsid="goodsId">
+			<image class="goodsPic" src="../../static/images/2-001.png" :src="goodsPic" mode="aspectFit"></image>
+			<text>{{goodsName}}</text>
+		</view>
+	</view>
 	</view>
 </form>
 </template>
 
 <script>
+	import {
+		getProductslist,
+		getProductHot
+	} from '@/api/store.js';
 	var sourceType = [
 		['camera'],
 		['album'],
@@ -63,11 +74,29 @@
 				}],
 				cameraIndex: 0, //
 				
-				inputVal:""
+				inputVal:"",
+				goodsId: -1,
+				goodsPic: '',
+				goodsName: '',
 			}
+		},
+		onLoad() {
+			uni.$on("choosenCommitGoods",(data)=>{
+				this.goodsId = data.goodsId;
+				this.goodsName = data.goodsName;
+				this.goodsPic = data.goodsPic;
+			});
+			// getProductslist().then(res => {
+			// 	let list = res.data.list;
+			// 	console.log(list)
+			// }).catch(err => {
+			// 	console.log("获取商品列表错误--->>>" + err)
+			// });
 		},
 		onUnload() {
 			(this.imageList = []), (this.sourceTypeIndex = 2), (this.sourceType = ['拍摄', '相册', '拍摄或相册']);
+			uni.$off("choosenCommitGoods");
+			this.goodsId = -1;
 		},
 		methods: {
 			//点击上传图片或视频
@@ -168,6 +197,11 @@
 				  console.log(this.inputVal);
 			    // this.sendContent(this.data.inputVal);
 			  },
+			  addGoods:function(){
+				  uni.navigateTo({
+				  	url:"../commit_goodList/commit_goodList"
+				  })
+			  }
 		}
 	}
 </script>
@@ -248,5 +282,40 @@
 	.sendText {
 	  font-size: 30rpx;
 	  color: white;
-	}
+	},
+	.goodsBlock{
+	    width: 100%;
+	    height: 120rpx;
+	    border-top: 1px solid grey;
+	    position: absolute;
+	    bottom: 0rpx;
+	    padding: 10rpx;
+	    display: flex;
+	    justify-content: flex-start;
+	    align-items: center;
+	  },
+	
+	  .addGoods{
+	    width: 76rpx;
+	    height: 76rpx;
+	  },
+	
+	  .goods{
+	    width: 96%;
+	    height: 180rpx;
+	    margin-left: 2%;
+	    margin-right:2%;
+	    /* margin-bottom: 30rpx; */
+	    padding: 10rpx;
+	    /* border: 1rpx solid grey;
+	    border-radius: 10rpx; */
+	    display: flex;
+	    align-items: center;
+	  },
+	  
+	  .goodsPic{
+	    width: 88rpx;
+	    height: 88rpx;
+	    margin-right: 10rpx;
+	  }
 </style>

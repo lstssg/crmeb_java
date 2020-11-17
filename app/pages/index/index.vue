@@ -424,7 +424,7 @@
 					} catch {}
 				}
 			});
-			this.getSeckillIndexTime();
+			//this.getSeckillIndexTime();
 			let self = this
 			// #ifdef MP
 			// 获取小程序头部高度

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 	"description": "项目配置文件。",
 	"packOptions": {
 		"ignore": []
@@ -61,4 +62,43 @@
 			]
 		}
 	}
+=======
+  "description": "项目配置文件。",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "minified": true,
+    "postcss": true,
+    "es6": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "",
+  "appid": "wx616e18f09805fed2",
+  "projectname": "crmeb",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "",
+          "path": "",
+          "query": "",
+          "id": 0
+        }
+      ]
+    }
+  }
+>>>>>>> a509b3726335de4c2dc474bd4bd9b472cff2b2f3
 }

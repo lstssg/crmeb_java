@@ -23,6 +23,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+/* 文字基本颜色 */
 .collectionGoods.data-v-59b202a4 {
   background-color: #fff;
   border-top: 1rpx solid #eee;

@@ -23,6 +23,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+/* 文字基本颜色 */
 .address-window.data-v-9b690cc8 {
   background-color: #fff;
   position: fixed;
